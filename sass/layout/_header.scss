@@ -1,0 +1,282 @@
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+    min-height: 60px;
+    margin-bottom: 0;
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+        display: flex;
+    }
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    }
+}
+.logo-header{
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin-right: 87px;
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            min-width: 145px;
+            font-size: 26px;
+            line-height: 1.19;
+            margin-right: 92px;
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+}
+.main-menu{
+    position: relative;
+    width: 100%;
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.main-menu {
+    @media (max-width: 768px) {
+        display: none;
+        margin-right: 96px;
+    }
+}
+
+
+.main-nav__site-nav {
+    display: flex;
+    .link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .item:not(:last-child) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 50px;
+        }
+        .link:hover,
+        .link:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+
+.accent {
+    color: #2196F3;
+}
+
+/*Stydio aktive*/
+.main-nav__aktive-page1 {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.current {
+    color: var(--accent-color);
+    position: relative;
+    transition-property: background-color;
+&::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/*Portfolio aktive*/
+.main-nav__aktive-page2 {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*Contacts-header*/
+.main-nav__contacts-header {
+    display: flex;
+    margin-left: auto;
+    @media screen and (min-width: 1200px) {.main-nav__contacts-header:not(:last-child) {
+margin-right: 30px;}
+}
+    .link {
+            display: block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    .link:hover,
+    .link:focus {
+            color: var(--accent-color);
+            }
+    @media screen and (min-width: 1200px) {
+        :not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            gap: 10px;
+            flex-direction: column;
+            margin-left: 90px;
+            }
+}
+@media screen and (min-width: 1200px) {.main-nav__link {
+    padding: 32px 0;}}
+
+.main-nav__mail-icon,
+.main-nav__tel-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.menu-open{
+    display: block;
+    margin-left: auto;
+    background-color: transparent;        
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 768px) 
+    {display: none;}
+}
+.menu-open:hover,
+.menu-open:focus {
+fill: #2196F3;
+}
+
+.mob-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    top: 0;
+    // padding-top: 48px;
+    padding-bottom: 48px;
+    > .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+.menu-close{
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close:hover,
+.menu-close:focus {
+    fill: #2196F3;
+}
+
+
+.litle-nav-link{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.litle-nav-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.litle-nav-contacts{
+    margin-bottom: 64px;
+}
+.litle-nav-contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.litle-contacts-link-tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+.litle-contacts-link-mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.social-small{
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-small-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+}
+.social-small-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, .2);
+    padding-right: 10px;}
+.social-small-item:not(:first-child) {
+    padding-left: 10px;
+}
+.litle-nav-aktive-page1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+.litle-nav-aktive-page2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+

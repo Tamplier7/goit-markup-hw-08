@@ -1,0 +1,44 @@
+.section-advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+            padding-top: 60px;
+        }
+}
+
+.section-job {
+    padding-bottom: 94px;
+        @media screen and (max-width: 1199px) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                display: none;
+            }
+}
+
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+        @media screen and (max-width: 1199px) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+}
+
+.section-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.section-work {
+    padding: 94px 0;
+        @media screen and (max-width: 1199px) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+}
