@@ -899,12 +899,36 @@ img {
   color: var(--primary-white-color);
   background-color: #2F303A;
   text-align: center;
-  padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/page1/img-hero-bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/img-hero-bg.jpg);
+  padding: 118px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/page1/img-hero-bg-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/img-hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/page1/img-hero-bg-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/img-hero-bg-tab.jpg);
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/page1/img-hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/img-hero-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-content {
+    padding: 0 204px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-content {
+    padding: 0 60px;
+  }
 }
 
 .hero-content__heder {
@@ -917,12 +941,24 @@ img {
   text-align: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 1199px) {
+  .hero-content__heder {
+    font-size: 26px;
+    line-height: 42px;
+    max-width: 360px;
+  }
+}
 
 .hero-content__button {
   margin-top: 30px;
   border-radius: 4px;
   padding: 10px 32px;
   border: transparent;
+}
+@media screen and (max-width: 1199px) {
+  .hero-content__button {
+    padding: 10px 24px;
+  }
 }
 
 .advantage__list .title {
