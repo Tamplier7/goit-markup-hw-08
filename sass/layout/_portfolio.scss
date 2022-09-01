@@ -72,7 +72,10 @@
     border-left-color: #EEEEEE;
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         border: 0;
+        flex-grow: 1;
     }
+    
+    
 }
 
 .portfolio-cards-list {
@@ -102,7 +105,7 @@
 .portfolio-cards-wrap {
     position: relative;
     overflow: hidden;
-    flex-grow: 1;
+
     height: 100%;
 }
 
