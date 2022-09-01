@@ -91,6 +91,9 @@
     &:focus {
         background-color: #188CE8;
         }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 0;
+    }
 }
 
 .modal-button-content {

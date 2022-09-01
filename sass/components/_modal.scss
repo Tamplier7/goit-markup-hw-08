@@ -17,16 +17,16 @@ box-sizing: inherit;
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    width: 528px;
-    max-height: 581px;
+    // width: 528px;
+    // max-height: 581px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    // @media screen and (max-width: 480px) {
-    //     min-width: 450px;
-    //     max-height: 609px;}
+    @media screen and (min-width: 480px) {
+        min-width: 100%;
+        max-height: 609px;}
     // @media screen and (max-width: 481px) {
     //     // width: 450px;
     //     height: 609px;
@@ -38,6 +38,9 @@ box-sizing: inherit;
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: calc(100% - 2 * 159px);
         transform: translate(-50%, -40%);}
+    @media screen and (max-width: 480px) {
+        padding: 35px;
+    }
 }
 
 .modal-close {
@@ -78,6 +81,10 @@ box-sizing: inherit;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+    @media screen and (max-width: 480px) {
+        font-weight: 700;
+        font-size: 18px;
+    }
 }
 
 .modal-input {
@@ -112,6 +119,9 @@ box-sizing: inherit;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    @media screen and (max-width: 480px) {
+        margin-bottom: 20px;
+    }
 }
 
 .modal-text {
@@ -131,6 +141,9 @@ box-sizing: inherit;
         line-height: 1.17;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
+    }
+    @media screen and (max-width: 480px) {
+        height: 100px;
     }
 }
 
@@ -179,6 +192,10 @@ box-sizing: inherit;
     @media screen and (max-width: 1199px) {
         font-size: 12px;
         line-height: 1.17;
+    }
+    @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+        font-size: 11px;
     }
 }
 
