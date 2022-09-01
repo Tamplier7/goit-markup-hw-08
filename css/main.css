@@ -1483,6 +1483,19 @@ img {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-cards {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #EEEEEE;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #EEEEEE;
+  }
+}
 
 .specification-portfolio {
   padding: 20px 24px;
@@ -1495,6 +1508,11 @@ img {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #EEEEEE;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .specification-portfolio {
+    border: 0;
+  }
 }
 
 .portfolio-cards-list {
