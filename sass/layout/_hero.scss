@@ -24,6 +24,9 @@
     }
     @media screen and (min-width: $desktop) {
         padding: 200px 0;
+        max-width: 1600px;
+        margin: auto;
+        background-position: center;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/img-hero-bg.jpg);
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),

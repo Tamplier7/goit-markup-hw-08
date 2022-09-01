@@ -14,82 +14,85 @@
 </head>
 <body>
     <!--Шапка сайта-->
-<header class="header">
-    <div class="container main-nav">
-        <a href="/" class="logo-header logo">
-            <span class="accent">Web</span>Studio
-        </a>
-        <div class="main-menu">
-            <nav class="main-nav__navigation">
-                <ul class="main-nav__site-nav list">
-                    <li class="item"><a href="index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="portfolio.html" class="main-nav__aktive-page2 current list">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+    <header class="header">
+        <div class="container main-nav">
+            <a href="/" class="logo-header logo">
+                <span class="accent">Web</span>Studio
+            </a>
+            <div class="main-menu">
+                <nav class="main-nav__navigation">
+                    <ul class="main-nav__site-nav list">
+                        <li class="item"><a href="index.html" class="main-nav__aktive-page1 list current link">Студия</a></li>
+                        <li class="item"><a href="portfolio.html" class="main-nav__aktive-page2 list current">Портфолио</a></li>
+                        <li class="item"><a href="" class="link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="main-nav__contacts-header list">
+                    <li class="item"><a href="mailto:info@devstudio.com" class="main-nav__link link"><svg
+                                class="main-nav__mail-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="main-nav__link link"><svg class="main-nav__tel-icon"
+                                width="16" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="main-nav__contacts-header list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="main-nav__link link"><svg
-                            class="main-nav__mail-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="main-nav__link link"><svg class="main-nav__tel-icon"
-                            width="16" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+            </div>
+            <button type="button" class="menu-open">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_40"></use>
+                </svg>
+            </button>
         </div>
-        <button type="button" class="menu-open">
-            <svg width="40" height="40">
-                <use href="./images/icons.svg#icon-menu_40"></use>
-            </svg>
-        </button>
-    </div>
-    <div class="mob-menu is-hidden">
-        <div class="container">
-            <div class="mob-menu-top">
+        <div class="mob-menu is-hidden">
+            <div class="container">
                 <button type="button" class="menu-close">
                     <svg width="40" height="40">
                         <use href="./images/icons.svg#icon-close_40"></use>
                     </svg>
                 </button>
-                <nav class="litle-nav">
-                    <ul class="litle-nav-site list">
-                        <li class="litle-nav-item item"><a href="index.html"
-                                class="litle-nav-link list">Студия</a></li>
-                        <li class="litle-nav-item item"><a href="portfolio.html"
-                                class="litle-nav-link litle-nav-aktive-page2 link list">Портфолио</a></li>
-                        <li class="litle-nav-item item"><a href="" class="litle-nav-link link list">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="mob-menu-bottom">
-                <ul class="litle-nav-contacts list">
-                    <li class="litle-nav-contacts-item item">
-                        <a href="tel:+380961111111" class="litle-contacts-link-tel link list">+38 096 111 11 11</a>
-                    </li>
-                    <li class="litle-nav-contacts-item item">
-                        <a href="mailto:info@devstudio.com"
-                            class="litle-contacts-link-mail link list">info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="social-small list">
-                    <li class="social-small-item">
-                        <a href="" class="social-small-link link">Instagram</a>
-                    </li>
-                    <li class="social-small-item">
-                        <a href="" class="social-small-link link">Twitter</a>
-                    </li>
-                    <li class="social-small-item">
-                        <a href="" class="social-small-link link">Facebook</a>
-                    </li>
-                    <li class="social-small-item">
-                        <a href="" class="social-small-link link">Linkedin</a>
-                    </li>
-                </ul>
+                <div class="mob-container">
+                    <div class="mob-menu-top">
+                        <nav class="litle-nav">
+                            <ul class="litle-nav-site list">
+                                <li class="litle-nav-item item"><a href="index.html"
+                                        class="litle-nav-link link list">Студия</a></li>
+                                <li class="litle-nav-item item"><a href="portfolio.html"
+                                        class="litle-nav-link litle-nav-aktive-page2 list">Портфолио</a></li>
+                                <li class="litle-nav-item item"><a href="" class="litle-nav-link link list">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="litle-nav-contacts list">
+                            <li class="litle-nav-contacts-item item">
+                                <a href="tel:+380961111111" class="litle-contacts-link-tel link list">+38 096 111 11 11</a>
+                            </li>
+                            <li class="litle-nav-contacts-item item">
+                                <a href="mailto:info@devstudio.com"
+                                    class="litle-contacts-link-mail link list">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="social-small list">
+                            <li class="social-small-item">
+                                <a href="" class="social-small-link link">Instagram</a>
+                            </li>
+                            <li class="social-small-item">
+                                <a href="" class="social-small-link link">Twitter</a>
+                            </li>
+                            <li class="social-small-item">
+                                <a href="" class="social-small-link link">Facebook</a>
+                            </li>
+                            <li class="social-small-item">
+                                <a href="" class="social-small-link link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     <!--Уникальный контент-->
     <main>
         <section class="section-work">
