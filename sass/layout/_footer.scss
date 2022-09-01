@@ -12,6 +12,10 @@
     @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
 }
 .address {
     margin-top: 20px;
@@ -54,6 +58,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            align-items: baseline;
         }
     
         @media screen and (min-width: $desktop) {
@@ -139,9 +144,13 @@
     @media screen and (max-width: $desktop) {
         margin-bottom: 20px;
         max-width: 450px;
+        margin-left: 120px;
+        margin-right: 120px;
     }
     @media screen and (min-width: $desktop) {
         width: 358px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
